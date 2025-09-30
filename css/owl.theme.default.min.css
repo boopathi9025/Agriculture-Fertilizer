@@ -1,0 +1,13 @@
+.owl-theme .owl-nav{
+    text-align:center;
+    margin-top:10px
+}
+.owl-theme .owl-nav button{
+    background:#ddd;
+    border-radius:4px;
+    padding:6px 8px;
+    border:none
+}
+.owl-theme .owl-dots .owl-dot.active{
+    background:#D9652A
+}

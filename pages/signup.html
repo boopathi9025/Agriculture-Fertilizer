@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign Up - FertileMart</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="signup-page">
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="../index.html">Fertile<span class="accent">Mart</span></a>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="form-wrap">
+        <h2>Create your account</h2>
+        <p class="muted">Sign up to save orders, see order history & faster checkout.</p>
+        <form id="signup-form" novalidate>
+          <input class="input" type="email" name="email" placeholder="Email" required>
+          <input class="input" type="password" name="password" placeholder="Password" required>
+          <input class="input" type="password" name="confirmPassword" placeholder="Confirm password" required>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Create account</button>
+            <a id="switch-to-login" class="link" href="#">Already have account?</a>
+          </div>
+        </form>
+        <p class="muted small" style="margin-top:12px">Demo only — do not use real passwords here.</p>
+      </div>
+    </div>
+  </main>
+  <script src="../js/main.js"></script>
+</body>
+</html>

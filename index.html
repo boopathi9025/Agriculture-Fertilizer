@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FertileMart — Marketplace</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="index.html">Fertile<span class="accent">Mart</span></a>
+
+      <form id="search-form" class="search-form" onsubmit="return false;">
+        <input id="search-input" type="search" placeholder="Search fertilizers, compost, organic..." />
+        <button id="search-btn" type="button">Search</button>
+      </form>
+
+      <nav class="header-nav">
+        <a href="pages/login.html" class="nav-link">Login</a>
+        <a href="pages/signup.html" class="nav-link">Sign up</a>
+        <a href="pages/cart.html" class="nav-link cart-link">Cart <span id="cart-count" class="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <h1>Premium Fertilizers & Organic Solutions</h1>
+        <p>Quality-tested fertilizers to boost yield, restore soil health, and feed your crops responsibly.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn primary">Shop Bestsellers</a>
+          <a href="pages/login.html" class="btn outline">Sell on FertileMart</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- Pure JS carousel (no external libs) -->
+        <div id="hero-carousel" class="carousel">
+          <div class="carousel-track">
+            <div class="carousel-slide"><img src="images/h3.jpeg" alt="h3"></div>
+            <div class="carousel-slide"><img src="images/h1.jpeg" alt="h1"></div>
+            <div class="carousel-slide"><img src="images/h2.jpeg" alt="h2"></div>
+          </div>
+          <button class="carousel-prev" aria-label="Previous">‹</button>
+          <button class="carousel-next" aria-label="Next">›</button>
+          <div class="carousel-dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="products container">
+      <div class="section-head">
+        <h2>Featured Products</h2>
+        <div class="filters">
+          <select id="filter-select">
+            <option value="all">All categories</option>
+            <option value="Fertilizers">Fertilizers</option>
+            <option value="Pesticides">Pesticides</option>
+            <option value="Seeds">Seeds</option>
+            <option value="Farm Tools">Farm Tools</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="product-grid" class="product-grid">
+        <article class="product-card" data-id="1" data-name="Vermi Compost" data-desc="Vermicompost – Organic nutrient-rich compost produced by earthworms for healthy soil and sustainable farming." data-price="20.00" data-category="Fertilizers" data-img="images/product1.jpeg">
+          <div class="card-media"><img src="images/product1.jpeg" alt="Vermi Compost" style="width: 280px; height: 200px;"></div>
+          <div class="card-body">
+            <h3>Vermi Compost</h3>
+            <p class="muted small">Nutrient-rich compost for plants.</p>
+            <div class="card-footer">
+              <strong class="price">Rs.20.00</strong>
+              <div class="actions">
+                <button class="link view-product">View</button>
+                <button class="btn add-to-cart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="5" data-name="Neem oil" data-desc="Neem oil is a natural, eco-friendly insecticide that controls harmful pests. It helps protect crops without harming the environment." data-price="120.00" data-category="Pesticides" data-img="images/product5.jpeg">
+          <div class="card-media"><img src="images/product5.jpeg" alt="Neem oil"></div>
+          <div class="card-body">
+            <h3>Neem oil</h3>
+            <p class="muted small">Neem oil is a natural insecticide that protects crops from pests safely.</p>
+            <div class="card-footer">
+              <strong class="price">Rs.120.00</strong>
+              <div class="actions">
+                <button class="link view-product">View</button>
+                <button class="btn add-to-cart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="9" data-name="Sunflower seed" data-desc="Sunflower seeds are widely cultivated for producing healthy edible oil. They are also used as nutritious snacks rich in vitamins and minerals." data-price="310.00" data-category="Seeds" data-img="images/product9.jpeg">
+          <div class="card-media"><img src="images/product9.jpeg" alt="Sunflower seed" style="width: 280px; height: 200px;"></div>
+          <div class="card-body">
+            <h3>Sunflower seed</h3>
+            <p class="muted small">Sunflower seeds used for edible oil and nutritious snacks.</p>
+            <div class="card-footer">
+              <strong class="price">Rs.310.00</strong>
+              <div class="actions">
+                <button class="link view-product">View</button>
+                <button class="btn add-to-cart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="2" data-name="Seaweed Extract" data-desc="Liquid Seaweed Extract is a natural fertilizer that boosts plant growth and improves yield. Safe for all crops." data-price="240.00" data-category="Fertilizers" data-img="images/product2.jpeg">
+          <div class="card-media"><img src="images/product2.jpeg" alt="Seaweed Extract" style="width: 280px; height: 200px;"></div>
+          <div class="card-body">
+            <h3>Seaweed Extract</h3>
+            <p class="muted small">Liquid Seaweed Extract – Natural growth booster for healthier.</p>
+            <div class="card-footer">
+              <strong class="price">Rs.240.00</strong>
+              <div class="actions">
+                <button class="link view-product">View</button>
+                <button class="btn add-to-cart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="16" data-name="Hoe Blade" data-desc="The hoe has a long handle and a flat or slightly angled blade, used for loosening soil, weeding, and shaping the soil for planting. It is essential for manual farming tasks." data-price="250.00" data-category="Farm Tools" data-img="images/product16.jpeg">
+          <div class="card-media"><img src="images/product16.jpeg" alt="Hoe Blade" style="width: 280px; height: 200px;"></div>
+          <div class="card-body">
+            <h3>Hoe Blade</h3>
+            <p class="muted small">A tool with a flat blade used to loosen soil and remove weeds.</p>
+            <div class="card-footer">
+              <strong class="price">Rs.250.00</strong>
+              <div class="actions">
+                <button class="link view-product">View</button>
+                <button class="btn add-to-cart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="3" data-name="Urea Gold High Nitrogen" data-desc="Urea Gold is a high-nitrogen fertilizer that promotes rapid plant growth. Ideal for improving crop productivity." data-price="180.00" data-category="Fertilizers" data-img="images/product3.jpeg">
+          <div class="card-media"><img src="images/product3.jpeg" alt="Urea Gold High Nitrogen" style="width: 280px; height: 200px;"></div>
+          <div class="card-body">
+            <h3>Urea Gold High Nitrogen</h3>
+            <p class="muted small">Urea Gold – High-nitrogen fertilizer for faster plant growth and better yield.</p>
+            <div class="card-footer">
+              <strong class="price">Rs.180.00</strong>
+              <div class="actions">
+                <button class="link view-product">View</button>
+                <button class="btn add-to-cart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="11" data-name="Groundnut seed" data-desc="Groundnut seeds are widely grown for producing edible oil and protein-rich snacks. They help improve soil fertility through nitrogen fixation." data-price="125.00" data-category="Seeds" data-img="images/product11.jpeg">
+          <div class="card-media"><img src="images/product11.jpeg" alt="Groundnut seed" style="width: 280px; height: 200px;"></div>
+          <div class="card-body">
+            <h3>Groundnut seed</h3>
+            <p class="muted small">Groundnut seeds used for oil and protein-rich food production.</p>
+            <div class="card-footer">
+              <strong class="price">Rs.125.00</strong>
+              <div class="actions">
+                <button class="link view-product">View</button>
+                <button class="btn add-to-cart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="4" data-name="DAP (Di-Ammonium Phosphate)" data-desc="DAP (Di-Ammonium Phosphate) is a popular fertilizer that supplies essential nitrogen and phosphorus. It supports strong root development and healthy plant growth." data-price="30.00" data-category="Fertilizers" data-img="images/product4.jpeg">
+          <div class="card-media"><img src="images/product4.jpeg" alt="Urea Gold High Nitrogen" style="width: 280px; height: 200px;"></div>
+          <div class="card-body">
+            <h3>DAP (Di-Ammonium Phosphate)</h3>
+            <p class="muted small">DAP – A balanced fertilizer providing nitrogen and phosphorus for healthy crop growth.</p>
+            <div class="card-footer">
+              <strong class="price">Rs.30.00</strong>
+              <div class="actions">
+                <button class="link view-product">View</button>
+                <button class="btn add-to-cart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+         <article class="product-card" data-id="8" data-name="Chlorpyrifos" data-desc="Chlorpyrifos 20% EC is a powerful insecticide that controls soil-borne and foliar pests. It is commonly used in crops like rice, cotton, and vegetables for effective protection." data-price="450.00" data-category="Pesticides" data-img="images/product8.jpeg">
+          <div class="card-media"><img src="images/product8.jpeg" alt="Chlorpyrifos" style="width: 280px; height: 200px;"></div>
+          <div class="card-body">
+            <h3>Chlorpyrifos</h3>
+            <p class="muted small">Chlorpyrifos 20% EC is an insecticide used to control soil and foliar pests in various crops.</p>
+            <div class="card-footer">
+              <strong class="price">Rs.450.00</strong>
+              <div class="actions">
+                <button class="link view-product">View</button>
+                <button class="btn add-to-cart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="10" data-name="Wheat seed" data-desc="Wheat seeds are essential for producing flour, bread, and other staple foods. They ensure high yield and quality grains." data-price="30.00" data-category="Seeds" data-img="images/product10.jpeg">
+          <div class="card-media"><img src="images/product10.jpeg" alt="Wheat seed"></div>
+          <div class="card-body">
+            <h3>Wheat seed</h3>
+            <p class="muted small">Wheat seeds used for flour and bread production.</p>
+            <div class="card-footer">
+              <strong class="price">Rs.30.00</strong>
+              <div class="actions">
+                <button class="link view-product">View</button>
+                <button class="btn add-to-cart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="6" data-name="Confidor" data-desc="Confidor is a systemic insecticide containing Imidacloprid, effective against sap-sucking insects. It ensures long-lasting protection for various crops." data-price="259.00" data-category="Pesticides" data-img="images/product6.jpeg">
+          <div class="card-media"><img src="images/product6.jpeg" alt="Confidor" style="width: 280px; height: 200px;"></div>
+          <div class="card-body">
+            <h3>Confidor</h3>
+            <p class="muted small">Confidor is a systemic insecticide used to control sap-sucking pests like aphids and whiteflies.</p>
+            <div class="card-footer">
+              <strong class="price">Rs.259.00</strong>
+              <div class="actions">
+                <button class="link view-product">View</button>
+                <button class="btn add-to-cart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="12" data-name="Paddy seed" data-desc="Paddy seeds are the starting point for rice cultivation, providing high-quality grains for staple food production. They ensure good yield and healthy crops." data-price="50.00" data-category="Seeds" data-img="images/product12.jpeg">
+          <div class="card-media"><img src="images/product12.jpeg" alt="Paddy seed"></div>
+          <div class="card-body">
+            <h3>Paddy seed</h3>
+            <p class="muted small">Paddy seeds used for rice cultivation and high-yield harvest.</p>
+            <div class="card-footer">
+              <strong class="price">Rs.50.00</strong>
+              <div class="actions">
+                <button class="link view-product">View</button>
+                <button class="btn add-to-cart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="13" data-name="Shovel" data-desc="A shovel is a strong manual tool used for digging, lifting, and moving soil or manure in the field. It is essential for soil preparation and planting activities." data-price="285.00" data-category="Farm Tools" data-img="images/product13.jpeg">
+          <div class="card-media"><img src="images/product13.jpeg" alt="Shovel"></div>
+          <div class="card-body">
+            <h3>Shovel</h3>
+            <p class="muted small">A shovel is a tool used for digging and moving soil on agricultural land.</p>
+            <div class="card-footer">
+              <strong class="price">Rs.285.00</strong>
+              <div class="actions">
+                <button class="link view-product">View</button>
+                <button class="btn add-to-cart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="14" data-name="Sickle" data-desc="The sickle has a sharp, curved blade and a short handle, used for harvesting crops like wheat, rice, and cutting grass or weeds manually." data-price="320.00" data-category="Farm Tools" data-img="images/product14.jpeg">
+          <div class="card-media"><img src="images/product14.jpeg" alt="Sickle" style="width: 280px; height: 200px;"></div>
+          <div class="card-body">
+            <h3>Sickle</h3>
+            <p class="muted small">A curved hand tool used for cutting crops and grass.</p>
+            <div class="card-footer">
+              <strong class="price">Rs.320.00</strong>
+              <div class="actions">
+                <button class="link view-product">View</button>
+                <button class="btn add-to-cart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="7" data-name="Malathion" data-desc="Malathion is a widely used broad-spectrum insecticide that controls sucking and chewing pests. It helps protect crops like fruits, vegetables, and grains from insect damage." data-price="325.00" data-category="Pesticides" data-img="images/product7.jpeg">
+          <div class="card-media"><img src="images/product7.jpeg" alt="Malathion" style="width: 280px; height: 200px;"></div>
+          <div class="card-body">
+            <h3>Malathion</h3>
+            <p class="muted small">Malathion is a broad-spectrum insecticide used to control sucking and chewing pests on crops.</p>
+            <div class="card-footer">
+              <strong class="price">Rs.325.00</strong>
+              <div class="actions">
+                <button class="link view-product">View</button>
+                <button class="btn add-to-cart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="15" data-name="Rake" data-desc="A rake is a simple hand tool used to level soil and gather leaves or debris on farmland. It helps in soil preparation and maintaining cleanliness in the field." data-price="300.00" data-category="Farm Tools" data-img="images/product15.jpeg">
+          <div class="card-media"><img src="images/product15.jpeg" alt="Rake"></div>
+          <div class="card-body">
+            <h3>Rake</h3>
+            <p class="muted small">A rake is a manual tool used for leveling soil and collecting debris on agricultural land.</p>
+            <div class="card-footer">
+              <strong class="price">Rs.300.00</strong>
+              <div class="actions">
+                <button class="link view-product">View</button>
+                <button class="btn add-to-cart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> FertileMart</div>
+      <div class="muted">Quality fertilizers • Sustainable farming</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

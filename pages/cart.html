@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cart - FertileMart</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="cart-page">
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="../index.html">Fertile<span class="accent">Mart</span></a>
+    </div>
+  </header>
+  <main>
+    <div class="container" style="max-width:1000px">
+      <h2>Your cart</h2>
+      <div id="cart-items" class="cart-list" style="margin-top:12px"></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:18px">
+        <div class="muted">Need help? Contact support</div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <div>Total: <strong>$<span id="total-amount">0.00</span></strong></div>
+          <button id="checkout-btn" class="btn primary" disabled>Proceed to payment</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../js/main.js"></script>
+</body>
+</html>

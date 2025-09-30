@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - FertileMart</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="login-page">
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="../index.html">Fertile<span class="accent">Mart</span></a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="form-wrap">
+        <h2>Welcome back</h2>
+        <p class="muted">Login to manage your orders and checkout faster.</p>
+        <form id="login-form" novalidate>
+          <input class="input" type="email" name="email" placeholder="Email" required>
+          <input class="input" type="password" name="password" placeholder="Password" required>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Login</button>
+            <a id="switch-to-signup" class="link" href="#">Create account</a>
+          </div>
+        </form>
+            <p class="muted small" style="margin-top:12px">This demo stores accounts in your browser (localStorage).</p>
+          </div>
+        </div>
+      </main>
+  <script src="../js/main.js"></script>
+</body>
+</html>

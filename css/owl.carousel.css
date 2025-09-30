@@ -1,0 +1,27 @@
+/* Minimal carousel styles */
+.owl-carousel{
+    display:block;
+    position:relative;
+    width:100%
+}
+.owl-stage{
+    display:flex
+}
+.owl-item{
+    flex:0 0 auto
+}
+.owl-dots{
+    text-align:center;
+    margin-top:12px
+}
+.owl-dot{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    margin:0 6px;
+    background:#ddd;
+    border-radius:50%
+}
+.owl-dot.active{
+    background:#2e7d32
+}

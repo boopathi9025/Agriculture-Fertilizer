@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Payment - FertileMart</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="payment-page">
+  <header class="site-header"><div class="container header-row"><a class="logo" href="../index.html">Fertile<span class="accent">Mart</span></a></div></header>
+  <main><div class="container"><div class="form-wrap" style="max-width:480px"><h2>Payment</h2><p class="muted">Complete your payment — demo only.</p><form id="payment-form" novalidate><input class="input" name="cardName" type="text" placeholder="Cardholder name" required><input class="input" name="cardNumber" type="text" placeholder="Card number (16 digits)" pattern="\d{16}" maxlength="16" required><input class="input" name="expiry" type="month" placeholder="MM/YY" required><input class="input" name="cvv" type="password" placeholder="CVV" pattern="\d{3}" maxlength="3" required><div style="display:flex;gap:10px;align-items:center"><button type="submit" class="btn primary">Pay now</button><a href="cart.html" class="link">Back to cart</a></div></form></div></div></main>
+  <script src="../js/main.js"></script>
+</body>
+</html>
